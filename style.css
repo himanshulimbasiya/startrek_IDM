@@ -1,0 +1,1050 @@
+/* Custom stylesheet for Star Trek Eire - Master Version */
+/* Created by Bebito Samji */
+/* Edited by Yoki 04/03/2018 */
+/*******************************************************/
+/* Star Trek Fonts used for the body */
+@font-face {
+  font-family: Federation;
+  /* src: url(fonts/raleway.tiff); */
+}
+
+@font-face {
+  font-family: Krupper;
+  /* src: url(fonts/raleway.tiff); */
+}
+
+/* Styles common throughout the pages */
+html {
+  font-size: 16px;
+  line-height: 23px;
+  background-color: #212121;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #212121;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  /* font-family: Federation, Helvetica; */
+}
+
+h2 {
+  font-size: 2em;
+  color: white;
+}
+
+.img-fluid {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+a {
+color: #99c0ff;
+}
+
+
+/*******************************************************/
+/* Navigation bar styling */
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #007129;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #f05f40;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212529;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: #f05f40;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: #fff !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+
+#logo {
+  z-index:3;
+}
+
+.navlogoimg{
+  width: 50px;
+  height: 50px;
+}
+
+.logoimg {
+ margin-top:10%;
+}
+
+/*******************************************************/
+/* Sets the position and animation of spaceship in banner*/
+
+.enterprise{
+  right:20px;
+  top:100px;
+  position: absolute;
+  -webkit-transition:left .66s ease-out, top  .66s ease-out;
+  transition:left 1s ease-out, top 1s ease-out;
+}
+
+.positioner {
+  position:absolute;
+  height:10%;
+  width:10%;
+}
+
+[id^="row-1"],
+[id^="row-1"]:hover  ~ .enterprise {
+  left: 0;
+}
+[id^="row-2"],
+[id^="row-2"]:hover  ~ .enterprise {
+  left: 10%;
+}
+[id^="row-3"],
+[id^="row-3"]:hover  ~ .enterprise {
+  left: 20%;
+}
+[id^="row-4"],
+[id^="row-4"]:hover  ~ .enterprise {
+  left: 30%;
+}
+[id^="row-5"],
+[id^="row-5"]:hover  ~ .enterprise {
+  left: 40%;
+}
+[id^="row-6"],
+[id^="row-6"]:hover  ~ .enterprise {
+  left: 50%;
+}
+[id^="row-7"],
+[id^="row-7"]:hover  ~ .enterprise {
+  left: 60%;
+}
+[id^="row-8"],
+[id^="row-8"]:hover  ~ .enterprise {
+  left: 70%;
+}
+[id^="row-9"],
+[id^="row-9"]:hover  ~ .enterprise {
+  left: 80%;
+}
+[id^="row-10"],
+[id^="row-10"]:hover  ~ .enterprise {
+  left: 90%;
+}
+[id$="col-1"],
+[id$="col-1"]:hover  ~ .enterprise {
+  top: 0;
+}
+[id$="col-2"],
+[id$="col-2"]:hover  ~ .enterprise {
+  top: 10%;
+}
+[id$="col-3"],
+[id$="col-3"]:hover  ~ .enterprise {
+  top: 20%;
+}
+[id$="col-4"],
+[id$="col-4"]:hover  ~ .enterprise {
+  top: 30%;
+}
+[id$="col-5"],
+[id$="col-5"]:hover  ~ .enterprise {
+  top: 40%;
+}
+[id$="col-6"],
+[id$="col-6"]:hover  ~ .enterprise {
+  top: 50%;
+}
+[id$="col-7"],
+[id$="col-7"]:hover  ~ .enterprise {
+  top: 60%;
+}
+[id$="col-8"],
+[id$="col-8"]:hover  ~ .enterprise {
+  top: 70%;
+}
+[id$="col-9"],
+[id$="col-9"]:hover  ~ .enterprise {
+  top: 80%;
+}
+[id$="col-10"],
+[id$="col-10"]:hover  ~ .enterprise {
+  top: 90%;
+}
+
+
+/*******************************************************/
+/* Sets the background banner image */
+.jumbotron{
+  background-image: url("/wp-content/themes/startrekeire/assets/earth-space.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 700px;
+  width: 100%;
+}
+
+/*******************************************************/
+/* Styles for the homepage - begins */
+
+/*about Star Trek*/
+.startrek_index {
+  text-align: left;
+}
+
+.index_title a {
+  text-decoration: none;
+  color: white;
+}
+
+/*About clubhouse*/
+.clubhouse {
+  background-image: url("/wp-content/themes/startrekeire/assets/clubhouse_index.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+#club-btn {
+  margin: 0 auto;
+  margin-left: 35%;
+}
+
+/*Events section*/
+.events_index {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-title, .modal-body, .modal-footer {
+  color: black;
+  line-height: 1.6;
+}
+
+
+.image_events {
+  max-width: 100%;
+  float: right;
+  padding: 10px;
+}
+
+/*gallery widget*/
+
+.container.gallery-container {
+  color: #000000;
+  min-height: 100vh;
+  /* padding: 30px 30px; */
+}
+
+.gallery-container h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: bold;
+}
+
+.gallery-container p.page-description {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 18px;
+  color: #000000;
+}
+
+.gallerywidget.gallery {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* Override bootstrap column paddings for gallery */
+.gallery .row > div {
+  padding: 2px;
+}
+
+.gallery .thumbnail img {
+  max-width: 90%;
+  border-radius: 0;
+  position: relative;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
+
+/* heading for the galleries */
+.gallery h3{
+  padding-top: 10px;
+  color: black;
+}
+
+.gallery h6{
+  padding-top: 10px;
+  color: black;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+.g-content{
+  margin: 10px;
+}
+
+/* Twitter embed format */
+.twitter{
+  padding: 20px 0;
+}
+
+/* container for contact details */
+.contact {
+  margin: 0 auto;
+  clear: both;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.text {
+  position: relative;
+  text-align: center;
+  margin: 0px;
+  color: black;
+}
+
+.text h1 {
+  text-align: center;
+  margin: 0px;
+}
+
+.text p {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.crew {
+  position: relative;
+  background-color: white;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+#img_crew{
+  max-width: 90%;
+}
+
+/*******************************************************/
+
+/* About page styles - begins here */
+
+/*Basic styling of rows*/
+.firstrow, .secondrow {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* First row of content */
+.firstrow p {
+  text-align: left;
+}
+
+.firstrow a {
+  text-decoration: none;
+  color: white;
+}
+
+.learn_more {
+  text-decoration: underline;
+  text-align: left;
+}
+
+/* Second row of content */
+.secondrow p {
+  text-align: left;
+}
+
+.about .col-lg-7 .col-md-7 .col-sm-9 .col-xs-12{
+  background: white;
+}
+
+.about {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.about_club{
+  background: white;
+  color: black;
+  padding: 20px;
+}
+
+.about_club h2{
+  color: black;
+}
+
+#clubhouse_about{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+#ste_about{
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+/*******************************************************/
+
+/* Article page styles - begins here */
+
+/* fontface for the articles */
+@font-face {
+  font-family: 'mytitlefont';
+  src: url('/wp-content/themes/startrekeire/fonts/TNG_Title.ttf') format('truetype');
+}
+
+#articlehead {
+  font-family: 'mytitlefont';
+  font-size: 1.8em;
+  padding: 10px;
+}
+
+#articles_main {
+  width: 100%;
+  height: 50%;
+}
+
+/* custom column styles */
+.custom_col {
+  background-color: rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+  border-style: ridge;
+  border-color: #CBCBCB;
+  padding-bottom: 5px;
+}
+
+/* column headings */
+.custom_col h5 {
+  /* font-family: 'mytitlefont'; */
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 10px;
+}
+
+.article {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+/* image in the article */
+#articleimage {
+  padding: 5px;
+  width: inherit;
+  height: 260px;
+}
+
+/* text in the article */
+.article p {
+  text-align: left;
+}
+
+/* heading for the article */
+.article h5 {
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+.article h6{
+  padding-top: 2px;
+  color: black;
+  font-size: 0.8em;
+  text-align: right;
+}
+
+/* Color for the meta tags */
+.article.post-meta {
+  color: white;
+}
+
+.btn-primary .btn-sm {
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* column stylings */
+.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8 {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8 {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.col-sm-12 {
+  clear: both;
+  background-color: rgba(255, 255, 255, 0)
+}
+
+.col-xs-12 {
+  clear: both;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.col-lg-4:hover, .col-lg-8:hover {
+  /* cursor: pointer; */
+  transition: all 0.5s ease-in-out;
+}
+
+.col-md-3:hover, .col-md-6:hover {
+  /* cursor: pointer; */
+  transition: all 0.2s ease-in-out;
+}
+
+/*CSS for the Articles template page*/
+
+.custom-col-article {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 1%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.article-title {
+  font-family: ;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  color: white;
+}
+
+.article-body {
+  font-family: ;
+  font-size: 1.2em;
+  padding: 5px;
+  align-content: center;
+  color: white;
+}
+
+.article-body .art-meta {
+  font-family: ;
+  font-size: 1em;
+  font-style: italic;
+  color: white;
+  padding: 2px;
+}
+
+.article-body .art-subtitle {
+  font-family: ;
+  font-size: 1.2em;
+  color: white;
+  padding: 2px;
+}
+
+.article-content img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/*******************************************************/
+/* Gallery section */
+
+.custom-gallery {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 1%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.custom-gallery img {
+  width: 250px;
+  height: 220px;
+}
+
+
+/*******************************************************/
+
+/* Footer Section styles - begins here */
+
+.footer {
+  clear: both;
+  position: relative;
+  color: white;
+  background-color: #000;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.footer h5{
+  padding-bottom: 10px;
+}
+
+.footer_header h5{
+  text-align: left;
+}
+
+.footer_content{
+  text-align: left;
+  text-decoration: none;
+  vertical-align: top;
+}
+
+.footer_content a{
+  color: white;
+}
+
+.footer_content li{
+  font-size: 0.9em;
+}
+
+.fot_col1 {
+  text-align: left;
+}
+
+/*copyright*/
+.mastfoot {
+  color: white;
+  background-color: #000;
+  font-size: 0.8em;
+}
+
+/* Padding for spacing */
+.inner {
+  text-align: right;
+  padding-bottom: 5px;
+}
+
+/*social icons*/
+#icons {
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: -30px;
+}
+
+#icons .fab {
+  color: white;
+  margin: 5px 5px;
+  position: relative;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+#icons .twitter:hover {
+  color:#6cadde;
+  bottom: 5px;
+}
+
+#icons .facebook:hover {
+  color:#3b5998;
+  bottom: 5px;
+}
+
+#icons .youtube:hover {
+  color: rgba(255, 0, 0, 0.7);
+  bottom: 5px;
+}
+
+/*******************************************************/
+
+/* Particle system styles - begins here */
+
+#particles-js {
+  position:relative;
+  width: 100vw;
+  height: 70vh;
+  background-color: #000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position: 50% 50%;*/
+}
+
+.color1 #particles-js{
+  /* blue */
+  background-color: #0e7cc9;
+}
+
+.color2 #particles-js{
+  /* green */
+  background-color: #007129;
+}
+
+.color3 #particles-js{
+  /* black */
+  background-color: #1e2322;
+}
+
+.color4 #particles-js{
+  /* red */
+  background-color: #f42222;
+}
+
+.color5 #particles-js{
+  /* yellow */
+  background-color: #f49c22;
+}
+
+/*******************************************************/
+/* Events section - begins here */
+
+#events_main {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.events {
+  text-align: left;
+  color: white;
+  padding: 10px;
+}
+
+/*.events a {*/
+/*  text-decoration: none;*/
+/*  color: white;*/
+/*}*/
+/**/
+/*.events a:hover {*/
+/*  color: #615C5B;*/
+/*}*/
+
+.events h6 {
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/*******************************************************/
+/* Media queries - begins here */
+
+@media screen and (max-width: 480px) {
+  .jumbotron{
+    height: 350px;
+  }
+
+  .particles-js{
+    height: 200px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  #logo img {
+    max-height: 150px;
+  }
+
+  .enterprise {
+  }
+
+
+  #circle {
+    position: absolute;
+    display: inline-block;
+    /* left: 50%;
+    right: 50%; */
+    /* margin-top: -10px; */
+    font-size: 2em;
+    font-weight: 150;
+    /* padding: 50px; */
+    border-radius: 95%;
+    height: 150px;
+    width: 150px;
+    background-color: #FAFAFA;
+  }
+
+  .mastfoot {
+    bottom: 0;
+    font-size: 0.8em;
+  }
+
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .mastfoot {
+    clear: both;
+    bottom: 0;
+    font-size: 0.8em;
+  }
+
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  #logo {
+  }
+
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0.5rem 1rem;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #007129;
+  }
+  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #f05f40;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: #212529;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #F05F40;
+  }
+}
+
+/*******************************************************/
+
+/* Modal box for articles */
+
+.modal-header h5 {
+  color: black;
+}
+
+.modal-body .italic {
+  color: black;
+  font-style: italic;
+}
+
+.modal-body h6 {
+  color: black;
+}
+
+.modal-body p {
+  color: black;
+}
+
+.modal-body .bold {
+  font-weight: bold;
+}
+
+/* links for full article */
+#clickme {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* buttons on the articles */
+.btn {
+  background-color: #FF4343;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-color: #000;
+  float: left;
+}
+
+/*******************************************************/
+/*******************************************************/
+.img_art {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.image_article{
+  max-width: 100%;
+  float: right;
+  padding: 10px;
+}
+
+.art {
+  text-align: left;
+  color: white;
+  padding: 10px;
+}
+
+.art a {
+  text-decoration: none;
+  color: white;
+}
+
+.art a:hover {
+  color: #615C5B;
+}
+
+.art h2 {
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.about_img {
+  max-width: 90%;
+  max-height: 100%;
+}
+
+#section_title {
+  position: absolute;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+  z-index: 1;
+}
+
+/***********************************************************************/
+
+/* Sidebar module */
+
+/* Sidebar module */
+
+.sidebar-module h5{
+	color:white !important;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.sidebar-module h6 {
+	color:white !important;
+	text-align: center;
+	font-size: 1em;
+}
+
+.sidebar-module {
+	text-align: left;
+	margin: 0 auto;
+	padding: 2px;
+	padding-top: 5px;
+}
+
+.sidebar-module form{
+	text-align: left;
+	margin: 0 auto;
+	padding-right: 10%;
+	padding-left: 10%;
+
+}
+
+.sidebar-module div{
+	text-align: left;
+	position: relative;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.sidebar-module label{
+	vertical-align: middle;
+	margin: 0 auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 0.9em;
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+.sidebar-module ul li {
+	text-align: left;
+	list-style-type:none;
+	margin: 0 auto;
+}
+
+.sidebar-module ul li a{
+	display: table-cell;
+  	vertical-align: left;
+	text-align: left;
+}
+
+.sidebar-module input {
+	display:block;
+	background-color:white;
+	margin: 5px;
+	border-radius: 5%;
+	font-size: 0.8em;
+}
+
+.sidebar-module a:hover {
+  	color: white;
+}
+
+/*********************************************************************/
+
